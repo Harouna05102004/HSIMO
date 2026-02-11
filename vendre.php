@@ -26,48 +26,60 @@
         <div class="form-container">
             <h1 class="form-title">Vendez votre maison !</h1>
             
-            <div class="sell-form">
+            <form id="sellForm" class="sell-form">
                 <div class="form-row">
                     <div class="form-group">
-                        <label for="address">Adresse</label>
-                        <input type="text" id="address" placeholder="Entrez l'adresse complète">
+                        <label for="title">Titre de l'annonce</label>
+                        <input type="text" id="title" name="title" placeholder="Ex: Belle villa avec piscine" required>
                     </div>
                     
                     <div class="form-group">
                         <label for="city">Ville</label>
-                        <input type="text" id="city" placeholder="Ville">
+                        <input type="text" id="city" name="city" placeholder="Ville" required>
                     </div>
                 </div>
                 
                 <div class="form-row">
                     <div class="form-group">
-                        <label for="rooms">Nombre de pièces</label>
-                        <input type="number" id="rooms" placeholder="Ex: 5">
+                        <label for="price">Prix (€)</label>
+                        <input type="number" id="price" name="price" placeholder="Ex: 450000" required>
                     </div>
                     
                     <div class="form-group">
                         <label for="surface">Surface (m²)</label>
-                        <input type="number" id="surface" placeholder="Ex: 120">
+                        <input type="number" id="surface" name="surface" placeholder="Ex: 120" required>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="rooms">Nombre de chambres</label>
+                        <input type="number" id="rooms" name="rooms" placeholder="Ex: 3" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="bathrooms">Nombre de salles de bain</label>
+                        <input type="number" id="bathrooms" name="bathrooms" placeholder="Ex: 2" required>
                     </div>
                 </div>
                 
                 <div class="form-group">
                     <label for="description">Description</label>
-                    <textarea id="description" rows="5" placeholder="Décrivez votre bien..."></textarea>
+                    <textarea id="description" name="description" rows="5" placeholder="Décrivez votre bien..." required></textarea>
                 </div>
                 
                 <div class="form-group">
                     <label for="photos">Photos</label>
                     <div class="file-upload">
-                        <input type="file" id="photos" multiple accept="image/*">
+                        <input type="file" id="photos" name="photos" multiple accept="image/*">
                         <label for="photos" class="file-upload-label">
                             <span>📁 Choisir des photos</span>
                         </label>
                     </div>
                 </div>
                 
-                <button class="btn-submit">Soumettre l'annonce</button>
-            </div>
+                <button type="submit" class="btn-submit">Soumettre l'annonce</button>
+            </form>
         </div>
     </main>
 
@@ -86,5 +98,6 @@
             </div>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

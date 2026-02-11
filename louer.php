@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acheter - Les plus belles maisons de la côte</title>
+    <title>Louer - Les plus belles maisons de la côte</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
@@ -13,8 +13,8 @@
             <div class="logo">IMMOLUX</div>
             <ul class="nav-links">
                 <li><a href="index.html">Accueil</a></li>
-                <li><a href="acheter.html" class="active">Acheter</a></li>
-                <li><a href="louer.html">Louer</a></li>
+                <li><a href="acheter.html">Acheter</a></li>
+                <li><a href="louer.html" class="active">Louer</a></li>
                 <li><a href="vendre.html">Vendre</a></li>
                 <li><a href="estimation.html">Estimation</a></li>
             </ul>
@@ -24,7 +24,7 @@
 
     <main class="container listing-page">
         <div class="page-header">
-            <h1 class="page-title">Achetez les Plus belles maisons de la côte</h1>
+            <h1 class="page-title">Louez les Plus belles maisons de la côte</h1>
             <div class="filter-tabs">
                 <button class="filter-tab active">Moderne</button>
                 <button class="filter-tab">Rustique</button>
@@ -32,30 +32,8 @@
             </div>
         </div>
 
-        <div class="property-grid-large">
-            <div class="property-card-large">
-                <div class="property-image-large">
-                    <img src="YOUR_BUY_PROPERTY_1_URL" alt="Maison 1">
-                    <span class="property-label">Maison 1</span>
-                </div>
-                <div class="property-details">
-                    <h3>Villa d'Exception</h3>
-                    <p class="location">Cap d'Antibes</p>
-                    <p class="sale-price">4 200 000 €</p>
-                </div>
-            </div>
-
-            <div class="property-card-large">
-                <div class="property-image-large">
-                    <img src="YOUR_BUY_PROPERTY_2_URL" alt="Maison 2">
-                    <span class="property-label">Maison 2</span>
-                </div>
-                <div class="property-details">
-                    <h3>Propriété Vue Mer</h3>
-                    <p class="location">Eze</p>
-                    <p class="sale-price">3 850 000 €</p>
-                </div>
-            </div>
+        <div class="property-grid-large" id="propertyContainer">
+            <!-- Les annonces seront chargées dynamiquement par JavaScript -->
         </div>
     </main>
 
@@ -74,5 +52,6 @@
             </div>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

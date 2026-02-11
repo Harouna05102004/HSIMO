@@ -27,28 +27,28 @@
         <div class="form-container">
             <h1 class="form-title">Estimez votre maison !</h1>
             
-            <div class="estimation-form">
+            <form id="estimationForm" class="estimation-form">
                 <div class="form-group">
                     <label for="address-est">Adresse</label>
-                    <input type="text" id="address-est" placeholder="Entrez l'adresse de votre bien">
+                    <input type="text" id="address-est" name="address" placeholder="Entrez l'adresse de votre bien" required>
                 </div>
                 
                 <div class="form-row">
                     <div class="form-group">
                         <label for="city-est">Ville</label>
-                        <input type="text" id="city-est" placeholder="Ville">
+                        <input type="text" id="city-est" name="city" placeholder="Ville" required>
                     </div>
                     
                     <div class="form-group">
                         <label for="postal">Code postal</label>
-                        <input type="text" id="postal" placeholder="Code postal">
+                        <input type="text" id="postal" name="postal" placeholder="Code postal" required>
                     </div>
                 </div>
                 
                 <div class="form-row triple">
                     <div class="form-group">
                         <label for="type">Type</label>
-                        <select id="type">
+                        <select id="type" name="type" required>
                             <option value="">Sélectionner</option>
                             <option value="maison">Maison</option>
                             <option value="appartement">Appartement</option>
@@ -58,24 +58,24 @@
                     
                     <div class="form-group">
                         <label for="rooms-est">Pièces</label>
-                        <input type="number" id="rooms-est" placeholder="Ex: 4">
+                        <input type="number" id="rooms-est" name="rooms" placeholder="Ex: 4" required>
                     </div>
                     
                     <div class="form-group">
                         <label for="surface-est">Surface (m²)</label>
-                        <input type="number" id="surface-est" placeholder="Ex: 100">
+                        <input type="number" id="surface-est" name="surface" placeholder="Ex: 100" required>
                     </div>
                 </div>
                 
                 <div class="form-row">
                     <div class="form-group">
                         <label for="year">Année de construction</label>
-                        <input type="number" id="year" placeholder="Ex: 1990">
+                        <input type="number" id="year" name="year" placeholder="Ex: 1990" required>
                     </div>
                     
                     <div class="form-group">
                         <label for="condition">État</label>
-                        <select id="condition">
+                        <select id="condition" name="condition" required>
                             <option value="">Sélectionner</option>
                             <option value="neuf">Neuf</option>
                             <option value="excellent">Excellent</option>
@@ -85,8 +85,8 @@
                     </div>
                 </div>
                 
-                <button class="btn-submit">Obtenir l'estimation</button>
-            </div>
+                <button type="submit" class="btn-submit">Obtenir l'estimation</button>
+            </form>
         </div>
     </main>
 
@@ -105,5 +105,6 @@
             </div>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
