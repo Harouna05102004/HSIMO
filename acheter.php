@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acheter - Les plus belles maisons de la côte</title>
+    <title>Acheter - ImmoLux</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
@@ -12,46 +12,20 @@
         <div class="nav-container">
             <div class="logo">IMMOLUX</div>
             <ul class="nav-links">
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="acheter.html" class="active">Acheter</a></li>
-                <li><a href="louer.html">Louer</a></li>
-                <li><a href="vendre.html">Vendre</a></li>
-                <li><a href="estimation.html">Estimation</a></li>
+                <li><a href="index.php">Accueil</a></li>
+                <li><a href="acheter.php" class="active">Acheter</a></li>
+                <li><a href="louer.php">Louer</a></li>
+                <li><a href="vendre.php">Vendre</a></li>
+                <li><a href="estimation.php">Estimation</a></li>
             </ul>
-            <a href="login.html" class="btn-login">Se connecter</a>
+            <a href="login.php" class="btn-login">Se connecter</a>
         </div>
     </nav>
-
     <main class="container listing-page">
-        <div class="page-header">
-            <h1 class="page-title">Achetez les Plus belles maisons de la côte</h1>
-            <div class="filter-tabs">
-                <button class="filter-tab active">Moderne</button>
-                <button class="filter-tab">Rustique</button>
-                <button class="filter-tab">Appartement</button>
-            </div>
-        </div>
-
+        <h1 class="page-title">Nos propriétés à la vente</h1>
         <div class="property-grid-large" id="propertyContainer">
-            <!-- Les annonces seront chargées dynamiquement par JavaScript -->
+            <p style="text-align:center; padding: 50px;">Chargement des plus belles villas...</p>
         </div>
     </main>
-
-    <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-section">
-                <h4>Nous contacter</h4>
-                <div class="social-links">
-                    <a href="#" aria-label="TikTok">📱</a>
-                    <a href="#" aria-label="Instagram">📷</a>
-                    <a href="#" aria-label="Facebook">👍</a>
-                </div>
-            </div>
-            <div class="footer-section">
-                <p>&copy; 2026 ImmoLux. Tous droits réservés.</p>
-            </div>
-        </div>
-    </footer>
-    <script src="script.js"></script>
 </body>
 </html>

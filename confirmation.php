@@ -12,13 +12,13 @@
         <div class="nav-container">
             <div class="logo">IMMOLUX</div>
             <ul class="nav-links">
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="acheter.html">Acheter</a></li>
-                <li><a href="louer.html">Louer</a></li>
-                <li><a href="vendre.html">Vendre</a></li>
-                <li><a href="estimation.html">Estimation</a></li>
+                <li><a href="index.php">Accueil</a></li>
+                <li><a href="acheter.php">Acheter</a></li>
+                <li><a href="louer.php">Louer</a></li>
+                <li><a href="vendre.php">Vendre</a></li>
+                <li><a href="estimation.php">Estimation</a></li>
             </ul>
-            <a href="login.html" class="btn-login">Se connecter</a>
+            <a href="login.php" class="btn-login">Se connecter</a>
         </div>
     </nav>
 
@@ -28,7 +28,7 @@
             <h1 class="confirmation-title">Votre demande de vente a bien été prise en compte !</h1>
             <p class="confirmation-text">Nous vous contacterons sous peu.</p>
             <p class="confirmation-subtext">Si vous avez besoin d'aide, n'hésitez pas à nous contacter.</p>
-            <a href="index.html" class="btn-home">Retour à l'accueil</a>
+            <a href="index.php" class="btn-home">Retour à l'accueil</a>
         </div>
     </main>
 
