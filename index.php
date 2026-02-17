@@ -1,4 +1,9 @@
 <!DOCTYPE html>
+<?php
+session_start();
+$isLoggedIn = isset($_SESSION['user_id']);
+$username = $_SESSION['username'] ?? '';
+?>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
@@ -20,7 +25,11 @@
                 <li><a href="vendre.php">Vendre</a></li>
                 <li><a href="estimation.php">Estimation</a></li>
             </ul>
-            <a href="login.php" class="btn-login">Se connecter</a>
+           <?php if ($isLoggedIn): ?>
+    <a href="logout.php" class="btn-login">Déconnexion (<?= htmlspecialchars($username) ?>)</a>
+<?php else: ?>
+    <a href="login.php" class="btn-login">Se connecter</a>
+<?php endif; ?>
         </div>
     </nav>
 
